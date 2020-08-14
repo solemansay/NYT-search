@@ -1,0 +1,11 @@
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    color: white;
+}
+
+.navbar {
+    background-color: navy;
+}
