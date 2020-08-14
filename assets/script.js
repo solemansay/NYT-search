@@ -6,13 +6,12 @@ var searchTermEl = $("#searchTerm").val();
 var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + apiKey + "&q=" + searchTermEl;
 
 //When the search button is clicked
-$("#Search").on("click", function (event){
+$("#search").on("click", function (event) {
     event.preventDefault();
-
-$.ajax({
-    url: queryURL,
-    method: "GET"
-}).then(function (response) {
-    console.log(response);
-})
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response);
+    })
 });
