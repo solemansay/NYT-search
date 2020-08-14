@@ -7,6 +7,7 @@ var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key
 
 //When the search button is clicked
 $("#search").on("click", function (event) {
+    //prevents page from refreshing
     event.preventDefault();
     $.ajax({
         url: queryURL,
@@ -15,3 +16,25 @@ $("#search").on("click", function (event) {
         console.log(response);
     })
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div id= "searchContent">
+<!-- <blockquote class="blockquote mb-0">
+<p> </p>
+<footer class="blockquote-footer">year <cite title="Source Title" id = "year">eg. 1996</cite></footer>
+</blockquote> -->
+</div> */}
